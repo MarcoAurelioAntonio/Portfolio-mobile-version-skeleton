@@ -1,18 +1,28 @@
-# Hello-Microverse
+# PORTFOLIO
 
 > ![screenshot](happyFace.jpg)
 
 # Descrption
 
-In this project, you will set up a "Hello world" repository. No complex coding is required for this exercise. Your goal here is to master all of the tools and best practices you learned about in previous steps. You will be using them in all Microverse projects and most likely in your future job as well, so it is important to know them!
+For the first milestone in the process of creating your portfolio website, you will:
+
+    -set up a new repository and prepare it for development using best practices (e.g. linters).
+    -build the first 2 sections of the mobile website using the template you chose in the previous step.
 
 ## General requirements
 
-- Make sure that there are no linter errors.
-- Make sure that you used correct (GitHub flow).
-- Make sure that you documented your work.
-
-## Get Started
+Make sure that there are no linter errors:
+Linter should be set up correctly for this repository.
+Linter result should be green.
+There should be no custom changes to linter config.
+Make sure that you used correct GitHub Flow:
+README file should be descriptive.
+Commit messages should be meaningful.
+Pull Request should have a descriptive title explaining what changes are inside.
+Pull Request should have a short summary describing introduced changes in more detail.
+Make sure that you documented your work in a professional way:
+Branch name should describe a feature or action (e.g. 'created_sidebar' or 'added_comments_section').
+Pull Request is made from 'feature branch' into the main branch
 
 ## Get Started
 
@@ -70,7 +80,7 @@ npx eslint .
 ## 🤝 Contributing
 
 - Contributions, issues, and feature requests are welcome!
-- Feel free to check the [issues page](https://github.com/MarcoAurelioAntonio/Hello-Microverse/issues)
+- Feel free to check the [issues page](https://github.com/MarcoAurelioAntonio/Portfolio-mobile-version-skeleton/issues)
 
 ## Show your support
 
@@ -79,7 +89,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Thank You [Microverse](www.microverse.org) team that help me with the template of this project.
-- Thanks to everyone who will get time to check this code and suggest any [issue](https://github.com/MarcoAurelioAntonio/Hello-Microverse/issues) to improve the page.
+- Thanks to everyone who will get time to check this code and suggest any [issue](https://github.com/MarcoAurelioAntonio/Portfolio-mobile-version-skeleton/issues) to improve the page.
 
 ## 📝 License
 
