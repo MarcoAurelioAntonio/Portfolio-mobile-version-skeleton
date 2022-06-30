@@ -11,18 +11,18 @@ For the first milestone in the process of creating your portfolio website, you w
 
 ## General requirements
 
-Make sure that there are no linter errors:
-Linter should be set up correctly for this repository.
-Linter result should be green.
-There should be no custom changes to linter config.
-Make sure that you used correct GitHub Flow:
-README file should be descriptive.
-Commit messages should be meaningful.
-Pull Request should have a descriptive title explaining what changes are inside.
-Pull Request should have a short summary describing introduced changes in more detail.
-Make sure that you documented your work in a professional way:
-Branch name should describe a feature or action (e.g. 'created_sidebar' or 'added_comments_section').
-Pull Request is made from 'feature branch' into the main branch
+-Make sure that there are no linter errors:
+-Linter should be set up correctly for this repository.
+-Linter result should be green.
+-There should be no custom changes to linter config.
+-Make sure that you used correct GitHub Flow:
+-README file should be descriptive.
+-Commit messages should be meaningful.
+-Pull Request should have a descriptive title explaining what changes are inside.
+-Pull Request should have a short summary describing introduced changes in more detail.
+-Make sure that you documented your work in a professional way:
+-Branch name should describe a feature or action (e.g. 'created_sidebar' or 'added_comments_section').
+-Pull Request is made from 'feature branch' into the main branch
 
 ## Get Started
 
