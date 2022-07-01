@@ -35,11 +35,11 @@ To get the content of this project locally you need to run the following command
 ### Setup
 1. Download the **Zip** file or clone the repo with:
 ```bash
-git clone https://github.com/MarcoAurelioAntonio/Hello-Microverse.git 
+git clone https://github.com/MarcoAurelioAntonio/Portfolio-mobile-version-skeleton.git 
 ```
 3. To access cloned directory run:
 ```bash
-cd Hello-Microverse
+cd Portfolio-mobile-version-skeleton
 ```
 3. Open it with the live server
 
