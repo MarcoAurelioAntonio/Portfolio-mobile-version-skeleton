@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .class {
@@ -35,7 +35,7 @@
 }
 
 .hamburger {
-  background-image: url('./img/Hamburger.png');
+  background-image: url("./img/Hamburger.png");
   width: 1.5rem;
   height: 1rem;
   margin-right: 35px;
@@ -52,20 +52,12 @@
 
 /* Headline */
 .principal {
-  /* Auto layout */
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 120px 24px;
   gap: 12px;
-  position: static;
   width: 100%;
-  height: 100vh;
-  left: 0;
-  top: 92px;
-
-  /* Theme 3 / Neutral 1 */
-  z-index: -1;
   background: #1c1a19;
   background-image: url(./img/illustration-header-mobile.png);
   background-repeat: no-repeat;
@@ -76,8 +68,7 @@
 /* Primary Text */
 .tittle {
   width: 327px;
-  height: 124px;
-  font-family: 'Crete Round';
+  font-family: "Crete Round";
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -88,61 +79,38 @@
 
   /* Theme 3 / Primary 1 */
   color: #ff6b00;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 /* profession */
 .profession h2 {
   width: 327px;
-  height: 27px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-
-  /* or 133% */
-  display: flex;
-  align-items: center;
-
-  /* Theme 3 / Primary 4 */
+  margin-top: 12px;
+  margin-bottom: 15px;
   color: #fff5e1;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 /* Description */
 .text p {
   width: 327px;
-  height: 123px;
-
-  /* Theme 1 / Body Reguler 2 */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
-  /* Theme 3 / Neutral 11 */
+  margin-bottom: 30px;
   color: #ffff;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 2;
-  flex-grow: 0;
 }
 
 /* icons section */
 
 .list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
@@ -156,33 +124,367 @@ li {
 }
 
 .github {
-  background-image: url('./img/github.png');
+  background-image: url("./img/github.png");
   width: 3rem;
   height: 3rem;
+  background-size: cover;
 }
 
 .twitter {
-  background-image: url('./img/twitter.png');
+  background-image: url("./img/twitter.png");
   width: 3rem;
   height: 3rem;
+  background-size: cover;
 }
 
 .angelist {
-  background-image: url('./img/angelist.png');
+  background-image: url("./img/angelist.png");
   width: 3rem;
   height: 3rem;
+  background-size: cover;
 }
 
 .linkedin {
-  background-image: url('./img/linkedin.png');
+  background-image: url("./img/linkedin.png");
   width: 3rem;
   height: 3rem;
+  background-size: cover;
 }
 
 .medium {
-  background-image: url('./img/Disabled.png');
+  background-image: url("./img/Disabled.png");
   width: 3rem;
   height: 3rem;
+  background-size: cover;
 }
 
-/* end of icons section */
+.work {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  column-gap: 50px;
+  row-gap: 24px;
+  justify-content: space-around;
+  padding: 0 24px;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.work-tittle h1 {
+  width: 100%;
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  color: #1c1a19;
+}
+
+.line1 {
+  width: 100%;
+  border: 0.1px solid #212121;
+  margin: 35px 0;
+}
+
+.work-img {
+  width: 327px;
+  height: 237px;
+  background-image: url(./works-img/Img\ Placeholder.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.multi-post {
+  /* Title Post */
+  width: 327px;
+  height: 36px;
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #091e42;
+}
+
+/* Supporting Text */
+.supprt-text {
+  width: 327px;
+  height: 147px;
+
+  /* Theme 3 / Body Reguler 2 */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  /* Neutrals/N900 */
+  color: #091e42;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  width: 100%;
+}
+
+/* Tag */
+.tag {
+  padding: 7px;
+  background: #ffff;
+  border: 1px solid #8993a4;
+}
+
+/* Button / Enable */
+.see-project {
+  padding: 12px;
+  gap: 10px;
+  width: 124px;
+  background: #ff6b00;
+  margin-top: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.see-project:hover {
+  background: #f38853;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work-title1 {
+  width: 327px;
+  height: 386px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  background-image: url(/works-img/cards.png);
+  justify-content: center;
+}
+
+.work-title1 h2 {
+  width: 295px;
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffff;
+}
+
+.work-title1 p {
+  width: 295px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffff;
+}
+
+.codes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  width: 236px;
+  height: 40px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.box {
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.24);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffff;
+}
+
+.button-area {
+  display: flex;
+  justify-content: center;
+  width: 327px;
+  height: 48px;
+  background: #ff6b00;
+}
+
+.button {
+  border: none;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 124px;
+  height: 48px;
+  left: calc(50% - 124px / 2);
+  top: calc(50% - 48px / 2);
+  background: #ff6b00;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  width: 100%;
+  height: 500px;
+  background: #1c1a19;
+  background-image: url(/about-img/Group.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: right;
+  margin-top: 20px;
+}
+
+.me-tittle {
+  width: 327px;
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  margin: 15px;
+  margin-top: 40px;
+}
+
+.about-text {
+  max-width: 550px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  margin: 15px;
+}
+
+.about-button {
+  width: 161px;
+  height: 48px;
+  background: #ff6b00;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  color: #ffff;
+  margin: 15px;
+}
+
+.line {
+  background: #1c1a19;
+  width: 100%;
+  height: 50px;
+  padding: 50px;
+}
+
+.line2 {
+  width: 100%;
+  border: 0.1px solid #ffff;
+  margin: auto;
+}
+
+@media (min-width: 750px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+  }
+
+  .about {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+  }
+
+  .about {
+    height: 350px;
+  }
+}
+
+.skill {
+  display: grid;
+  flex-wrap: wrap;
+  background-color: #1c1a19;
+  justify-items: center;
+  padding-bottom: 50px;
+}
+
+.skill div {
+  width: 330px;
+}
+
+.inline {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  margin: 30px;
+}
+
+.inline img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.inline h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 42.67px;
+  vertical-align: middle;
+  color: white;
+}
