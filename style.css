@@ -1,6 +1,7 @@
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 
 * {
   margin: 0;
@@ -32,6 +33,7 @@
   font-size: 20px;
   line-height: normal;
   text-decoration: none;
+  font-family: sans-serif;
 }
 
 .hamburger {
@@ -212,21 +214,12 @@ li {
 .supprt-text {
   width: 327px;
   height: 147px;
-
-  /* Theme 3 / Body Reguler 2 */
-  font-family: "Inter";
+  font-family: sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-
-  /* Neutrals/N900 */
   color: #091e42;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 /* Tags */
@@ -244,6 +237,7 @@ li {
   padding: 7px;
   background: #ffff;
   border: 1px solid #8993a4;
+  font-family: sans-serif;
 }
 
 /* Button / Enable */
