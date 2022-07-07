@@ -177,6 +177,7 @@ li {
   font-weight: 400;
   font-size: 40px;
   color: #1c1a19;
+  margin-top: 60px;
 }
 
 .line1 {
@@ -267,6 +268,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 100px;
 }
 
 .work-title1 {
@@ -303,12 +305,12 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0;
   gap: 12px;
   width: 236px;
   height: 40px;
   list-style-type: none;
-  margin: 0;
+  margin-left: -55px;
+  margin-top: -50px;
 }
 
 .box {
@@ -329,6 +331,7 @@ li {
   width: 327px;
   height: 48px;
   background: #ff6b00;
+  margin-top: -30px;
 }
 
 .button {
@@ -356,7 +359,7 @@ li {
   align-items: center;
   align-content: flex-start;
   width: 100%;
-  height: 500px;
+  height: 580px;
   background: #1c1a19;
   background-image: url(/about-img/Group.png);
   background-repeat: no-repeat;
@@ -373,7 +376,7 @@ li {
   font-size: 72px;
   letter-spacing: 0.37px;
   color: #ff6b00;
-  margin: 15px;
+  margin: 22px;
   margin-top: 40px;
 }
 
@@ -385,7 +388,7 @@ li {
   font-size: 16px;
   line-height: 24px;
   color: #f4f5f7;
-  margin: 15px;
+  margin: 22px;
 }
 
 .about-button {
@@ -398,14 +401,15 @@ li {
   font-size: 17px;
   letter-spacing: 0.03em;
   color: #ffff;
-  margin: 15px;
+  margin: 22px;
+  margin-top: -5px;
 }
 
 .line {
   background: #1c1a19;
   width: 100%;
-  height: 50px;
-  padding: 50px;
+  padding: 0 20px;
+  border: 1px solid black;
 }
 
 .line2 {
@@ -443,11 +447,7 @@ li {
   flex-wrap: wrap;
   background-color: #1c1a19;
   justify-items: center;
-  padding-bottom: 50px;
-}
-
-.skill div {
-  width: 330px;
+  padding-bottom: 80px;
 }
 
 .inline {
