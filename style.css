@@ -414,6 +414,15 @@ li {
 
 @media (min-width: 750px) {
   .cards {
+    float: left;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*
+@media (min-width: 750px) {
+  .cards {
     display: grid;
     grid-template-columns: auto auto;
     gap: 15px;
@@ -422,7 +431,7 @@ li {
   .about {
     height: 400px;
   }
-}
+} */
 
 @media (min-width: 1000px) {
   .cards {
