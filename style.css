@@ -67,7 +67,6 @@
   background-position-x: right;
 }
 
-/* Primary Text */
 .tittle {
   width: 327px;
   font-family: "Crete Round";
@@ -75,15 +74,9 @@
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
-
-  /* or 114% */
   letter-spacing: 0.37px;
-
-  /* Theme 3 / Primary 1 */
   color: #ff6b00;
 }
-
-/* profession */
 .profession h2 {
   width: 327px;
   font-family: "Roboto";
@@ -95,8 +88,6 @@
   margin-bottom: 15px;
   color: #fff5e1;
 }
-
-/* Description */
 .text p {
   width: 327px;
   font-family: "Poppins";
@@ -107,9 +98,6 @@
   margin-bottom: 30px;
   color: #ffff;
 }
-
-/* icons section */
-
 .list {
   display: flex;
   flex-wrap: wrap;
@@ -162,7 +150,7 @@ li {
 
 .work {
   display: flex;
-  align-items: center;
+  align-items: center; 
   flex-flow: row wrap;
   column-gap: 50px;
   row-gap: 24px;
@@ -209,8 +197,6 @@ li {
   align-items: center;
   color: #091e42;
 }
-
-/* Supporting Text */
 .supprt-text {
   width: 327px;
   height: 147px;
@@ -222,7 +208,6 @@ li {
   color: #091e42;
 }
 
-/* Tags */
 .tags {
   display: flex;
   flex-direction: row;
@@ -232,7 +217,6 @@ li {
   width: 100%;
 }
 
-/* Tag */
 .tag {
   padding: 7px;
   background: #ffff;
@@ -240,7 +224,6 @@ li {
   font-family: sans-serif;
 }
 
-/* Button / Enable */
 .see-project {
   padding: 12px;
   gap: 10px;
@@ -527,7 +510,7 @@ li {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 24px;
 }
 
@@ -546,7 +529,7 @@ li {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 24px;
   color: #3c3a39;
   background: #fbf8f7;
