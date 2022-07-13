@@ -600,7 +600,7 @@ textarea[type="text"]::placeholder {
   background: #fbf8f7;
 }
 
-.form-inputs textarea[type="text"]::placeholder {
+.form-inputs textarea[name="comments"]::placeholder {
   /* Firefox, Chrome, Opera */
   padding-left: 10px;
   padding-top: 8px;
