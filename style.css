@@ -1,6 +1,6 @@
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@300;700&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 
 * {
@@ -242,9 +242,11 @@ li {
 
 /* Button */
 .see-project {
+  border: none;
   padding: 12px;
   gap: 10px;
   width: 124px;
+  color: #ffff;
   background: #ff6b00;
   margin-top: 20px;
   font-family: "Inter";
@@ -254,8 +256,21 @@ li {
 }
 
 .see-project:hover {
-  background: #f38853;
+  background: #fff5e1;
+  border: 1px solid #f55800;
   cursor: pointer;
+  color: #f55800;
+}
+
+.see-project:active {
+  background: #e05304;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.see-project:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 .cards {
@@ -319,21 +334,13 @@ li {
   color: #ffff;
 }
 
-.button-area {
-  display: flex;
-  justify-content: center;
-  width: 327px;
-  height: 48px;
-  background: #ff6b00;
-  margin-top: -30px;
-}
-
 .button {
+  margin-top: -30px;
   border: none;
   align-items: center;
   padding: 12px;
   gap: 10px;
-  width: 124px;
+  width: 327px;
   height: 48px;
   left: calc(50% - 124px / 2);
   top: calc(50% - 48px / 2);
@@ -344,6 +351,24 @@ li {
   font-size: 17px;
   color: #ffff;
   cursor: pointer;
+}
+
+.button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  cursor: pointer;
+  color: #f55800;
+}
+
+.button:active {
+  background: #e05304;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 .about {
@@ -386,6 +411,7 @@ li {
 }
 
 .about-button {
+  border: none;
   width: 161px;
   height: 48px;
   background: #ff6b00;
@@ -397,6 +423,24 @@ li {
   color: #ffff;
   margin: 22px;
   margin-top: -5px;
+}
+
+.about-button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  cursor: pointer;
+  color: #f55800;
+}
+
+.about-button:active {
+  background: #e05304;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.about-button:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 .line {
@@ -489,20 +533,20 @@ li {
   align-items: flex-start;
   padding: 120px 24px;
   gap: 58px;
-  width: 360px;
+  width: 100%;
   height: 844px;
   resize: vertical;
   margin: auto;
 }
 
 .form-text {
-  width: 320px;
-  height: 216px;
+  width: 327px;
+  height: 215px;
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 700;
+  font-weight: bolder;
   font-size: 32px;
-  line-height: 44px;
+  line-height: 39px;
   text-align: center;
   color: #172b4d;
 }
@@ -519,6 +563,8 @@ li {
 }
 
 .form-inputs input {
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
   width: 320px;
   height: 48px;
   left: 16px;
@@ -531,25 +577,34 @@ li {
   line-height: 24px;
 }
 
+.form-inputs input,
+textarea[type="text"]::placeholder {
+  /* Firefox, Chrome, Opera */
+  padding-left: 10px;
+}
+
 .form-inputs input:focus {
   box-shadow: 5px 5px 6px rgba(0 0 0 0.1);
 }
 
 .form-inputs textarea {
+  border: none;
   width: 320px;
   height: 114px;
   resize: vertical;
-  left: 12px;
-  right: 12px;
-  top: 12px;
-  bottom: 12px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 24px;
   color: #3c3a39;
   background: #fbf8f7;
+}
+
+.form-inputs textarea[type="text"]::placeholder {
+  /* Firefox, Chrome, Opera */
+  padding-left: 10px;
+  padding-top: 8px;
+  color: black;
 }
 
 .form-inputs textarea:focus {
@@ -557,6 +612,7 @@ li {
 }
 
 .form-button {
+  border: none;
   display: flex;
   align-items: center;
   text-align: center;
@@ -586,9 +642,18 @@ li {
   margin: auto;
 }
 
+.footer-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+  border-top: 2px solid #dfe1e6;
+  width: 100%;
+}
+
 .final {
   width: 100%;
-  height: 40px;
+  height: 20px;
 }
 
 .final-line {
@@ -602,35 +667,35 @@ li {
 
 .github1 {
   background-image: url("black-social-img/black-github.png");
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-size: cover;
 }
 
 .twitter1 {
   background-image: url("black-social-img/black-twiter.png");
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-size: cover;
 }
 
 .angelist1 {
   background-image: url("black-social-img/black-angelist.png");
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-size: cover;
 }
 
 .linkedin1 {
   background-image: url("black-social-img/black-linkedin.png");
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-size: cover;
 }
 
 .medium1 {
   background-image: url("black-social-img/black-medium.png");
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-size: cover;
 }
