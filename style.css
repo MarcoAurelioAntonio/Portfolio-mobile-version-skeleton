@@ -132,6 +132,11 @@ li {
   width: 2.5rem;
   height: 2.5rem;
   background-size: cover;
+  transition: transform 0.2s ease-out;
+}
+
+.github:hover {
+  transform: translate(3px, -3px);
 }
 
 .twitter {
@@ -139,6 +144,11 @@ li {
   width: 2.5rem;
   height: 2.5rem;
   background-size: cover;
+  transition: transform 0.2s ease-out;
+}
+
+.twitter:hover {
+  transform: translate(-3px, -3px);
 }
 
 .angelist {
@@ -146,6 +156,11 @@ li {
   width: 2.5rem;
   height: 2.5rem;
   background-size: cover;
+  transition: transform 0.2s ease-out;
+}
+
+.angelist:hover {
+  transform: translate(3px, -3px);
 }
 
 .linkedin {
@@ -153,6 +168,11 @@ li {
   width: 2.5rem;
   height: 2.5rem;
   background-size: cover;
+  transition: transform 0.2s ease-out;
+}
+
+.linkedin:hover {
+  transform: translate(-3px, -3px);
 }
 
 .medium {
@@ -160,6 +180,11 @@ li {
   width: 2.5rem;
   height: 2.5rem;
   background-size: cover;
+  transition: transform 0.2s ease-out;
+}
+
+.medium:hover {
+  transform: translate(3px, -3px);
 }
 
 .work {
@@ -284,6 +309,7 @@ li {
   border: 1px solid #f55800;
   cursor: pointer;
   color: #f55800;
+  transition: 0.8s;
 }
 
 .see-project:active {
@@ -322,12 +348,16 @@ li {
   align-items: flex-end;
   justify-content: center;
   padding-bottom: 47px;
+  transition: transform 0.5s;
 }
 
 .hide-card:hover {
   cursor: pointer;
   background-image: url(/works-img/Img\ Placeholder\ no\ opacity.png);
   text-indent: -9999px;
+  -ms-transform: scale(1.01); /* IE 9 */
+  -webkit-transform: scale(1.01); /* Safari 3-8 */
+  transform: scale(1.01); /* Chrome */
 }
 
 .work-title1 h2 {
@@ -398,6 +428,7 @@ li {
   border: 1px solid #f55800;
   cursor: pointer;
   color: #f55800;
+  transition: 0.8s;
 }
 
 .button:active {
@@ -467,6 +498,7 @@ li {
   border: 1px solid #f55800;
   cursor: pointer;
   color: #f55800;
+  transition: 0.8s;
 }
 
 .about-button:active {
@@ -655,6 +687,7 @@ textarea[type="text"]::placeholder {
   border: 1px solid #f55800;
   cursor: pointer;
   color: #f55800;
+  transition: 0.8s;
 }
 
 .form-button:active {
