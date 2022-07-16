@@ -601,6 +601,11 @@ li {
   line-height: 39px;
   text-align: center;
   color: #172b4d;
+  transition: transform 0.7s ease-in-out;
+}
+
+.form-text:hover {
+  transform: rotate(360deg);
 }
 
 .form-inputs {
