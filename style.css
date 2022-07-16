@@ -605,7 +605,7 @@ li {
 }
 
 .form-text:hover {
-  transform: rotate(360deg);
+  transform: rotate(45deg);
 }
 
 .form-inputs {
