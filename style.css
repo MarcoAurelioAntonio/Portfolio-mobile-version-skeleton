@@ -949,7 +949,7 @@ textarea[type="text"]::placeholder {
 
   .about {
     background-image: url(about-img/illustration-about\ me@2x.png);
-    background-size: 50%;
+    background-size: 45%;
     background-repeat: no-repeat;
     background-position: bottom;
     background-position-x: right;
