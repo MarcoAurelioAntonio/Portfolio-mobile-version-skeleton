@@ -605,7 +605,7 @@ li {
 }
 
 .form-text:hover {
-  transform: rotate(-10deg);
+  transform: rotate(-5deg);
 }
 
 .form-inputs {
@@ -852,6 +852,13 @@ textarea[type="text"]::placeholder {
     font-weight: 550;
     font-size: 14px;
     line-height: 20px;
+    transition: transform 0.2s;
+  }
+
+  .navlinks li a:hover {
+    -ms-transform: scale(1.07); /* IE 9 */
+    -webkit-transform: scale(1.07); /* Safari 3-8 */
+    transform: scale(1.07); /* Chrome */
   }
 
   .hamburger {
@@ -861,6 +868,14 @@ textarea[type="text"]::placeholder {
     height: 1.3rem;
     background-size: contain;
     background-repeat: no-repeat;
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+
+  .hamburger:hover {
+    -ms-transform: scale(1.07); /* IE 9 */
+    -webkit-transform: scale(1.07); /* Safari 3-8 */
+    transform: scale(1.07); /* Chrome */
   }
 
   .tittle {
