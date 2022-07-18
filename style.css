@@ -33,7 +33,7 @@
 }
 
 .hamburger {
-  background-image: url("./img/Hamburger.png");
+  background-image: url("../img/Hamburger.png");
   width: 1.5rem;
   height: 1rem;
   margin-right: 35px;
@@ -128,7 +128,7 @@ li {
 }
 
 .github {
-  background-image: url("./img/github.png");
+  background-image: url("../img/github.png");
   width: 2.5rem;
   height: 2.5rem;
   background-size: cover;
@@ -140,7 +140,7 @@ li {
 }
 
 .twitter {
-  background-image: url("./img/twitter.png");
+  background-image: url("../img/twitter.png");
   width: 2.5rem;
   height: 2.5rem;
   background-size: cover;
@@ -152,7 +152,7 @@ li {
 }
 
 .angelist {
-  background-image: url("./img/angelist.png");
+  background-image: url("../img/angelist.png");
   width: 2.5rem;
   height: 2.5rem;
   background-size: cover;
@@ -176,7 +176,7 @@ li {
 }
 
 .medium {
-  background-image: url("./img/Disabled.png");
+  background-image: url("../img/Disabled.png");
   width: 2.5rem;
   height: 2.5rem;
   background-size: cover;
@@ -235,7 +235,7 @@ li {
 .work-img {
   width: 327px;
   height: 237px;
-  background-image: url(./works-img/Img\ Placeholder.png);
+  background-image: url(../works-img/Img\ Placeholder.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -336,7 +336,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  background-image: url(/works-img/cards.png);
+  background-image: url(../works-img/cards.png);
   justify-content: center;
 }
 
@@ -353,7 +353,7 @@ li {
 
 .hide-card:hover {
   cursor: pointer;
-  background-image: url(/works-img/Img\ Placeholder\ no\ opacity.png);
+  background-image: url(../works-img/Img\ Placeholder\ no\ opacity.png);
   text-indent: -9999px;
   -ms-transform: scale(1.01); /* IE 9 */
   -webkit-transform: scale(1.01); /* Safari 3-8 */
@@ -450,7 +450,7 @@ li {
   width: 100%;
   height: 550px;
   background: #1c1a19;
-  background-image: url(/about-img/Group.png);
+  background-image: url(../about-img/Group.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-position-x: right;
@@ -811,7 +811,7 @@ textarea[type="text"]::placeholder {
 
 @media (min-width: 840px) {
   .principal {
-    background-image: url(img/Illustration-header.png);
+    background-image: url(../img/Illustration-header.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -863,7 +863,7 @@ textarea[type="text"]::placeholder {
 
   .hamburger {
     margin-right: 70px;
-    background-image: url(./img/Icon\ -\ Mail.png);
+    background-image: url(../img/Icon\ -\ Mail.png);
     width: 1.9rem;
     height: 1.3rem;
     background-size: contain;
@@ -948,7 +948,7 @@ textarea[type="text"]::placeholder {
   }
 
   .about {
-    background-image: url(/about-img/illustration-about\ me@2x.png);
+    background-image: url(../about-img/illustration-about\ me@2x.png);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: bottom;
