@@ -38,14 +38,72 @@
   height: 1rem;
   margin-right: 35px;
   background-size: cover;
+  cursor: pointer;
 }
 
 .navlinks {
   display: none;
 }
 
-.navlinks.active {
-  display: flex;
+@media (max-width: 840px) {
+  .navlinks.active {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 755px;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    align-content: center;
+    background: #3c3a39;
+    cursor: auto;
+  }
+
+  .nav {
+    padding: 10px;
+    margin: 5px 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 44px;
+    border-bottom: 1px solid #6f6c6b;
+  }
+
+  .nav1 {
+    border: none;
+  }
+
+  .cross {
+    background-image: url(img/cross.png);
+    height: 2.5rem;
+    width: 2.5rem;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: -20px;
+  }
+
+  .ul-nav {
+    width: 100%;
+    position: absolute;
+    top: 3rem;
+  }
+
+  .nav a {
+    color: #fff5e1;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  /* close mobile menu */
+
+  .close {
+    display: none;
+  }
 }
 
 /* Headline */
@@ -72,11 +130,7 @@
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
-
-  /* or 114% */
   letter-spacing: 0.37px;
-
-  /* Theme 3 / Primary 1 */
   color: #ff6b00;
 }
 
@@ -833,7 +887,7 @@ textarea[type="text"]::placeholder {
   .navlinks {
     display: inline;
     float: right;
-    width: 335px;
+    width: 370px;
   }
 
   .navlinks li {

@@ -11,12 +11,13 @@
   <body>
     <header class="header">
       <a href="#" class="logo-nombre">Gustavo Porcilio</a>
-      <div class="hamburger">
+      <div id="menu" class="hamburger">
         <nav class="navlinks">
-          <ul>
-            <li><a href="#porfolio">My Portfolio</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="ul-nav">
+            <li class="nav nav1"><a class="cross" href="#"></a></li>
+            <li class="nav"><a href="#portfolio">My Portfolio</a></li>
+            <li class="nav"><a href="#about">About me</a></li>
+            <li class="nav"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -54,7 +55,7 @@
     <section class="work">
       <div class="work-tittle">
         <div>
-          <h2>My Recent Work</h2>
+          <h2 id="portfolio">My Recent Work</h2>
         </div>
         <div class="line1"></div>
       </div>
@@ -204,7 +205,7 @@
       </div>
     </section>
     <!--About-->
-    <section class="about">
+    <section id="about" class="about">
       <h1 class="me-tittle">About me</h1>
       <div class="about-text">
         <p>
@@ -260,7 +261,7 @@
         </ul>
       </div>
     </section>
-    <section class="form">
+    <section id="contact" class="form">
       <p class="form-text">
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
@@ -324,5 +325,8 @@
         <div class="final-line"></div>
       </div>
     </footer>
+
+    <script src="dom.js"></script>
+
   </body>
 </html>
