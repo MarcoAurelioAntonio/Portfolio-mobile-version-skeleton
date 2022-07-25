@@ -63,6 +63,7 @@
 
   .nav {
     padding: 10px;
+    background-color: red;
     margin: 5px 30px;
     font-family: 'Inter';
     font-style: normal;
