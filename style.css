@@ -11,6 +11,26 @@
   font-family: "Poppins", sans-serif;
 }
 
+.header.active,
+.principal.active,
+.work.active,
+.skill.active,
+.about.active,
+.cards.active,
+.form.active,
+footer.active {
+  filter: blur(6px);
+  -webkit-filter: blur(4px);
+}
+
+.work.active,
+.about.active,
+.cards.active,
+.form.active,
+footer.active {
+  background-color: rgba(000, 000, 000, 0.1);
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -823,6 +843,282 @@ textarea[type="text"]::placeholder {
   width: 2.5rem;
   height: 2.5rem;
   background-size: cover;
+}
+
+/* Popup styling */
+@media (max-width: 375px) {
+  .popup {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 718px;
+    width: 343px;
+    background-color: #ffff;
+    position: absolute;
+    top: 14px;
+    left: 16px;
+  }
+
+  .pop-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    margin-left: 16px;
+    margin-bottom: 15px;
+    width: 311px;
+    background-image: url(img/cross.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    cursor: pointer;
+  }
+
+  .techno {
+    display: flex;
+    width: 311px;
+    padding: 0;
+    flex-direction: row;
+    margin-left: 16px;
+    gap: 30px;
+  }
+
+  .techno-pop {
+    padding: 12px;
+    border: 1px solid #c9c4c2;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 4px;
+    color: #3c3a39;
+    list-style-type: none;
+  }
+
+  .pop-img {
+    width: calc(100% - 32px);
+    height: 220px;
+    background-image: url(img/Snapshoot\ Portfolio.png);
+    background-size: cover;
+    margin-left: 16px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+  }
+
+  .pop-text {
+    width: calc(100% - 35px);
+    height: 245px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    margin-left: 16px;
+  }
+
+  .pop-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 16px 16px;
+    padding-left: 0;
+    width: 311px;
+  }
+
+  .see {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 25px;
+    gap: 12px;
+    background: #ff6b00;
+  }
+
+  .see a {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #ffff;
+  }
+
+  .one {
+    background-image: url(img/power.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: right;
+    padding-left: 15px;
+    padding-right: 31px;
+  }
+
+  .two {
+    background-image: url(img/litle-github.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: right;
+    padding-left: 15px;
+    padding-right: 31px;
+  }
+}
+
+/* Popup Descktop */
+@media (min-width: 1200px) {
+  .popup {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 631px;
+    width: 1156px;
+    background-color: #ffff;
+    position: absolute;
+    top: 112px;
+    left: calc((100vw - 1156px) / 2);
+  }
+
+  .pop-title {
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    margin-left: 24px;
+    width: 1100px;
+    height: 40px;
+    background-image: url(img/cross.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    cursor: pointer;
+  }
+
+  .techno {
+    display: flex;
+    width: 305px;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .techno-pop {
+    padding: 12px;
+    border: 1px solid #c9c4c2;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 12px;
+    color: #3c3a39;
+    list-style-type: none;
+  }
+
+  .desktop-pop-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .pop-img {
+    width: 659px;
+    height: 448px;
+    background-image: url(img/Snapshoot\ Portfolio.png);
+    background-size: cover;
+    margin-left: 24px;
+    margin-bottom: 27px;
+  }
+
+  .desktop-pop-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 448px;
+    justify-content: space-between;
+  }
+
+  .pop-text {
+    width: 424px;
+    height: 336px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #344563;
+    margin-left: 25px;
+  }
+
+  .pop-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 16px 25px;
+    margin-bottom: 0;
+    padding-left: 0;
+    width: 311px;
+  }
+
+  .see {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 30px;
+    gap: 12px;
+    background: #ff6b00;
+  }
+
+  .see a {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #ffff;
+  }
+
+  .one {
+    background-image: url(img/power.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: right;
+    padding-left: 25px;
+    padding-right: 40px;
+  }
+
+  .two {
+    background-image: url(img/litle-github.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: right;
+    padding-left: 25px;
+    padding-right: 40px;
+  }
 }
 
 /* First transition for About section */
