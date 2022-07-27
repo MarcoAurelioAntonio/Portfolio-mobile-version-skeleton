@@ -1,7 +1,7 @@
 const workcards = [
   {
     id: 0,
-    titulo: 'My Gratiest Work',
+    titulo: 'My Greatest Work',
     lenguaje: 'html',
     lenguaje2: 'css',
     lenguaje3: 'Bootstrap',
