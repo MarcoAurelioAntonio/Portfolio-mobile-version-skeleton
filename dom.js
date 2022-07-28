@@ -213,3 +213,29 @@ form.addEventListener('submit', (e) => {
     error.classList.remove('hiden-msg');
   }
 });
+
+/* Local storage for form */
+const formStorage = [];
+// example {id:1592304983049, title: 'Deadpool', year: 2015}
+const addUser = (ev) => {
+  ev.preventDefault(); // to stop the form submitting
+  const user = {
+    id: Date.now(),
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    comment: document.getElementById('comment').value,
+  };
+  formStorage.push(user);
+  document.forms[0].reset(); // to clear the form for the next entries
+  // Or I can use -> document.querySelector('form').reset();
+
+  /* for display purposes only //////////////////
+  console.warn('added', { formStorage });
+  let pre = document.querySelector('#msg pre');
+  pre.textContent = "\n" + JSON.stringify(formStorage, "\t", 2); */
+
+  // saving to localStorage
+  localStorage.setItem('MyUserList', JSON.stringify(formStorage));
+};
+
+document.getElementById('submit').addEventListener('click', addUser);
