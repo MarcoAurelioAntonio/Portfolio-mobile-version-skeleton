@@ -853,7 +853,7 @@ textarea[type="text"]::placeholder {
 }
 
 #error:hover {
-  color: rgb(248, 085, 085);
+  color: rgb(198, 41, 41);
   transform: scale(1.05);
 }
 
