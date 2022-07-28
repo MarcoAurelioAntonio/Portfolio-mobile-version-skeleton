@@ -198,3 +198,18 @@ openButton6.addEventListener('click', () => {
   id = 6;
   displayPopup();
 });
+
+/* Form validation email - lowercases */
+const email = document.getElementById('email');
+const error = document.getElementById('error');
+const form = document.getElementById('all-the-form');
+
+form.addEventListener('submit', (e) => {
+  error.classList.add('hiden-msg');
+  const upper = /[A-Z]/g;
+  if (upper.test(email.value)) {
+    e.preventDefault();
+    email.value = email.value.toLowerCase();
+    error.classList.remove('hiden-msg');
+  }
+});

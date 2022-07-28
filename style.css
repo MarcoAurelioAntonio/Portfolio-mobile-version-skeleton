@@ -845,6 +845,16 @@ textarea[type="text"]::placeholder {
   background-size: cover;
 }
 
+/* Form validation email lowercases */
+#error {
+  color: rgb(248, 085, 085);
+  margin-top: -25px;
+}
+
+.hiden-msg {
+  display: none;
+}
+
 /* Popup styling */
 @media (max-width: 375px) {
   .popup {
