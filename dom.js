@@ -213,3 +213,33 @@ form.addEventListener('submit', (e) => {
     error.classList.remove('hiden-msg');
   }
 });
+
+/* Local storage for form */
+const username = document.getElementById('name');
+const email1 = document.getElementById('email');
+const message = document.getElementById('comment');
+let user;
+function saveData() {
+  user = {
+    name: '',
+    email1: '',
+    message: '',
+  };
+  user.name = username.value;
+  user.email1 = email.value;
+  user.message = message.value;
+  localStorage.setItem('usermessage', JSON.stringify(user));
+}
+username.onchange = saveData;
+email.onchange = saveData;
+message.onchange = saveData;
+
+// Preserve input data with reload or refresh
+window.addEventListener('load', () => {
+  user = JSON.parse(localStorage.getItem('usermessage'));
+  if (user) {
+    username.value = user.name;
+    email1.value = user.email1;
+    message.value = user.message;
+  }
+});

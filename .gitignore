@@ -3,3 +3,4 @@ node_modules/
 test.md 
 popup.html
 popup.css
+storage.js
