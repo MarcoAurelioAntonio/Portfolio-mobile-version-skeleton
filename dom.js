@@ -234,10 +234,6 @@ username.onchange = saveData;
 email.onchange = saveData;
 message.onchange = saveData;
 
-// document.forms[0].reset(); to clear the form for the next entries
-// Or I can use -> document.querySelector('form').reset();
-// but the reset of the form dont let me validate the form.////////////
-
 // Preserve input data with reload or refresh
 window.addEventListener('load', () => {
   user = JSON.parse(localStorage.getItem('usermessage'));
