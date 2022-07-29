@@ -215,27 +215,35 @@ form.addEventListener('submit', (e) => {
 });
 
 /* Local storage for form */
-const formStorage = [];
-// example {id:1592304983049, title: 'Deadpool', year: 2015}
-const addUser = (ev) => {
-  ev.preventDefault(); // to stop the form submitting
-  const user = {
-    id: Date.now(),
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-    comment: document.getElementById('comment').value,
+const username = document.getElementById('name');
+const email1 = document.getElementById('email');
+const message = document.getElementById('comment');
+let user;
+function saveData() {
+  user = {
+    name: '',
+    email1: '',
+    message: '',
   };
-  formStorage.push(user);
-  document.forms[0].reset(); // to clear the form for the next entries
-  // Or I can use -> document.querySelector('form').reset();
+  user.name = username.value;
+  user.email1 = email.value;
+  user.message = message.value;
+  localStorage.setItem('usermessage', JSON.stringify(user));
+}
+username.onchange = saveData;
+email.onchange = saveData;
+message.onchange = saveData;
 
-  /* for display purposes only //////////////////
-  console.warn('added', { formStorage });
-  let pre = document.querySelector('#msg pre');
-  pre.textContent = "\n" + JSON.stringify(formStorage, "\t", 2); */
+// document.forms[0].reset(); to clear the form for the next entries
+// Or I can use -> document.querySelector('form').reset();
+// but the reset of the form dont let me validate the form.////////////
 
-  // saving to localStorage
-  localStorage.setItem('MyUserList', JSON.stringify(formStorage));
-};
-
-document.getElementById('submit').addEventListener('click', addUser);
+// Preserve input data with reload or refresh
+window.addEventListener('load', () => {
+  user = JSON.parse(localStorage.getItem('usermessage'));
+  if (user) {
+    username.value = user.name;
+    email1.value = user.email1;
+    message.value = user.message;
+  }
+});
