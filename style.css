@@ -1247,6 +1247,7 @@ textarea[type="text"]::placeholder {
   .tittle {
     font-size: 72px;
     width: 450px;
+    margin-left: 200px;
   }
 
   .profession h2 {
